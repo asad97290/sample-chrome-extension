@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "My Awesome Extension",
+  "description": "This is a sample Chrome extension.",
+  "icons": {
+
+  },
+  "host_permissions":[
+    "https://mail.google.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "css": ["styles.css"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
+
